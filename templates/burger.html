@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='burger.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бургери</title>
+</head>
+<body>
+
+
+    <head>
+    <h1>Бургери</h1>
+
+            <nav>
+        <ul>
+            <li><a href="{{ url_for('food_street') }}">Головна</a></li>
+            <li><a href="{{ url_for('menu') }}">Переглянути меню</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="burger">
+
+        <img src="https://mcdonaldsmenu.ru/image/cache/catalog/photo/764668645-gamburger-600x600.png" >
+        <h2>Гамбургер</h2>
+        <p>Ціна: 60 ₴</p>
+        <p>96 г/g | 253 ккал/kcal</p>
+        <p>Біфштекс із натуральної яловичини, цибуля, шматочок маринованого огірка, заправлені гірчицею і кетчупом, у запашній булочці з пшеничного борошна.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+    </head>
+
+    <head>
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Best_CHEESEBURGER-1:product-header-desktop?wid=829&hei=455&dpr=off" >
+        <h2>Чізбургер</h2>
+        <p>Ціна: 72 ₴</p>
+        <p>117 г/g | 298 ккал/kcal</p>
+        <p>Біфштекс із натуральної яловичини, шматочок сиру “Чеддер”, шматочок маринованого огірка та цибуля, заправлені гірчицею і кетчупом, у булочці з пшеничного борошна.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+    </head>
+
+
+    <head>
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Best_BIGMAC-1:product-header-desktop?wid=829&hei=455&dpr=off" >
+        <h2>Біг Мак</h2>
+        <p>Ціна: 92 ₴</p>
+        <p>229 г/g | 526 ккал/kcal</p>
+        <p>Два біфштекси з натуральної яловичини, цибуля, маринований огірок, сир “Чеддер”, свіжий салат, заправлені спеціальним соусом, у булочці з насінням сезаму.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+    </head>
+
+
+    <head>
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Best_BIG_TASTY-1:product-header-desktop?wid=829&hei=455&dpr=off" >
+        <h2>Біг Тейсті</h2>
+        <p>Ціна: 154 ₴</p>
+        <p>325 г/g | 790 ккал/kcal</p>
+        <p>Натуральна яловичина у поєднанні зі свіжими овочами та плавленим сиром “Емменталь”.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+    </head>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Контактна інформація</h4>
+                <p>Телефон: +380645680475</p>
+                <p>Email: info@food_street.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Графік роботи</h4>
+                <p>Пн-Пт: Цілодобово</p>
+                <p>Сб-Нд: 8:00 - 2:00</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Ми в соціальних мережах</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktok.com">TikTok</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Підтримка</h4>
+                <p>Найчастіші запитання</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

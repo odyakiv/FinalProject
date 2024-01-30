@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='end.css') }}">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Замовлення</title>
+</head>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('food_street') }}">Головна</a></li>
+            <li><a href="{{ url_for('menu') }}">Переглянути меню</a></li>
+
+
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Ваше замовлення успішно прийнято</h1>
+
+    </header>
+    <h1><img src="https://korka-hleba.com.ua/wa-data/public/shop/img/cargo-delivery.jpg" height="400" width="400"></h1>
+    <h1>Ваше замовлення прибуде через 30 хв</h1>
+<body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+
+
+
+
+
+            <div class="col-md-5">
+                <h4>Ми в соціальних мережах</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktok.com">TikTok</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+
+
+
+
+<div class="col-md-4">
+                <div/>
+
+            <div class="col-md-7">
+                <h4>Графік роботи</h4>
+                <p>Пн-Пт: Цілодобово</p>
+                <p>Сб-Нд: 8:00 - 2:00</p>
+            </div>
+
+                <div class="col-md-5">
+                <div/>
+                    <div class="col-md-5">
+                <div/>
+                        <div class="col-md-5">
+                <div/>
+                            <div class="col-md-5">
+                <div/>
+                                <div class="col-md-5">
+                <div/>
+                                    <div class="col-md-5">
+                <div/>
+                                        <div class="col-md-5">
+                <div/>
+                                            <div class="col-md-5">
+                <div/>
+                                                <div class="col-md-5">
+                <div/>
+                                                    <div class="col-md-5">
+                <div/>
+                                                        <div class="col-md-5">
+                <div/>
+                                                            <div class="col-md-5">
+                <div/>
+                                                                <div class="col-md-5">
+                <div/>
+                                                                    <div class="col-md-5">
+                <div/>
+                                                                        <div class="col-md-5">
+                <div/>
+                                                                            <div class="col-md-5">
+                <div/>
+            <div class="col-md-5">
+                <h4>Контактна інформація</h4>
+                <p>Телефон: +380645680475</p>
+                <p>Email: info@food_street.com</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+               </div>
+        </div>
+    </div>
+
+
+    <div class="rating" onclick="rateService(event)">
+        <span id="star1" class="star">☆</span>
+        <span id="star2" class="star">☆</span>
+        <span id="star3" class="star">☆</span>
+        <span id="star4" class="star">☆</span>
+        <span id="star5" class="star">☆</span>
+    </div>
+
+    <script>
+        function rateService(event) {
+            const starId = event.target.id;
+            for (let i = 1; i <= 5; i++) {
+                const star = document.getElementById(`star${i}`);
+                star.innerHTML = '☆';
+            }
+            for (let i = 1; i <= parseInt(starId[4]); i++) {
+                const star = document.getElementById(`star${i}`);
+                star.innerHTML = '★';
+            }
+        }
+    </script>
+    </footer>
+</body>
+</html>

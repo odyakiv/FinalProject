@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sous.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Соуси</title>
+</head>
+<body>
+    <h1>Соуси</h1>
+        <nav>
+        <ul>
+            <li><a href="{{ url_for('food_street') }}">Головна</a></li>
+            <li><a href="{{ url_for('menu') }}">Переглянути меню</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/New_Sauce_BUFFALO:product-header-desktop?wid=829&hei=455&dpr=off" >
+        <h2>Соус Баффало</h2>
+        <p>Ціна: 20 ₴</p>
+        <p>40 г/g | 40 ккал/kcal</p>
+        <p>Гострий соус із кисло-солодкими нотками, прянощами додасть характеру твоїм улюбленим стравам.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/New_Sauce_BUFFALO:product-header-desktop?wid=829&hei=455&dpr=off" >
+        <h2>Соус Хабанеро</h2>
+        <p>Ціна: 20 ₴</p>
+        <p>40 г/g | 120 ккал/kcal</p>
+        <p>Пікантний перець Хабанеро, солодка паприка й прянощі.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/New_Sauce_DOR_BLU:nutrition-calculator-tile" >
+        <h2>Соус із сиром Дорблю</h2>
+        <p>Ціна: 20 ₴</p>
+        <p>40 г/g | 100 ккал/kcal</p>
+        <p>Ніжний соус із вишуканим вершковим смаком сиру Дорблю — ідеальне доповнення до хрумких снеків.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/SauceBBQ:product-header-desktop?wid=830&hei=458&dpr=off" >
+        <h2>Соус Барбекю</h2>
+        <p>Ціна: 10 ₴</p>
+        <p>25 г/g | 38 ккал/kcal</p>
+
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Ketchup:product-header-desktop?wid=830&hei=458&dpr=off" >
+        <h2>Кетчуп</h2>
+        <p>Ціна: 10 ₴</p>
+        <p>28 г/g | 29 ккал/kcal</p>
+
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Mayonnaise-2:nutrition-calculator-tile" >
+        <h2>Майонез</h2>
+        <p>Ціна: 10 ₴</p>
+        <p>25 г/g | 119 ккал/kcal</p>
+
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Mustard:product-header-desktop?wid=830&hei=456&dpr=off" >
+        <h2>Соус Гірчичний</h2>
+        <p>Ціна: 10 ₴</p>
+        <p>25 г/g | 55 ккал/kcal</p>
+
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+
+
+
+
+
+            <div class="col-md-5">
+                <h4>Ми в соціальних мережах</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktok.com">TikTok</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+
+
+
+
+<div class="col-md-4">
+                <div/>
+
+            <div class="col-md-7">
+                <h4>Графік роботи</h4>
+                <p>Пн-Пт: Цілодобово</p>
+                <p>Сб-Нд: 8:00 - 2:00</p>
+            </div>
+
+                <div class="col-md-5">
+                <div/>
+                    <div class="col-md-5">
+                <div/>
+                        <div class="col-md-5">
+                <div/>
+                            <div class="col-md-5">
+                <div/>
+                                <div class="col-md-5">
+                <div/>
+                                    <div class="col-md-5">
+                <div/>
+                                        <div class="col-md-5">
+                <div/>
+                                            <div class="col-md-5">
+                <div/>
+                                                <div class="col-md-5">
+                <div/>
+                                                    <div class="col-md-5">
+                <div/>
+                                                        <div class="col-md-5">
+                <div/>
+                                                            <div class="col-md-5">
+                <div/>
+                                                                <div class="col-md-5">
+                <div/>
+                                                                    <div class="col-md-5">
+                <div/>
+                                                                        <div class="col-md-5">
+                <div/>
+                                                                            <div class="col-md-5">
+                <div/>
+            <div class="col-md-5">
+                <h4>Контактна інформація</h4>
+                <p>Телефон: +380645680475</p>
+                <p>Email: info@food_street.com</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+               </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

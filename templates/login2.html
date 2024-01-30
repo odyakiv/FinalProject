@@ -1,0 +1,46 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login2.css') }}">
+
+<div class="login">
+  <a href="{{ url_for('items', item_id=1) }}"><h2 class="active"> sign in </h2></a>
+
+  <h2 class="nonactive"> sign up </h2>
+  <form>
+
+
+
+    <input type="text" class="text" name="username">
+     <span>Email or Number</span>
+
+    <br>
+
+    <br>
+
+    <input type="password" class="text" name="password">
+    <span>Username</span>
+
+    <br>
+
+    <br>
+
+    <input type="password" class="text" name="password">
+    <span>Password</span>
+
+    <br>
+
+    <br>
+
+
+    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+    <label for="checkbox-1-1">Keep me Signed up</label>
+
+    <button class="signin">
+      Sign UP
+    </button>
+
+
+    <hr>
+
+    <h3>Forgot Password?</h3>
+  </form>
+
+</div>

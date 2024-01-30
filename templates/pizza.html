@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pizza.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Піци</title>
+</head>
+<body>
+    <h1>Піци</h1>
+        <nav>
+        <ul>
+            <li><a href="{{ url_for('food_street') }}">Головна</a></li>
+            <li><a href="{{ url_for('menu') }}">Переглянути меню</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="burger">
+        <img src="https://images.deliveryhero.io/image/menus-glovo/products/8272943bec6e3b9244d361afcf26e67ae0f10c2c99327bbcc20904697aa31417?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=">
+        <h2>Піца Франческо</h2>
+        <p>Ціна: 190 ₴</p>
+        <p>215 г/g</p>
+        <p>Основа томатна, моцарела, мисливські ковбаски, бекон, цибуля маринована, помідор, сир чедер, зелень, часниковий соус, орегано.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://images.deliveryhero.io/image/menus-glovo/products/26be6872b00ab62886fdc50b59c9500305459a8f62280ebd1815639417447321?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=">
+        <h2>Піца Барбекю</h2>
+        <p>Ціна: 225 ₴</p>
+        <p>525 г/g</p>
+        <p>Соус BBQ, мікс сирів, маринована цибуля, Печериці, огірок, Пепероні, Мисливські ковбаски, зелена цибуля, соус "Світ Чилі".</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://images.deliveryhero.io/image/menus-glovo/products/a9164a9b9cf59dbc6cbeea0be9b8023325d5ca331771f42cfd8a781b606d5a94?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=">
+        <h2>Піца Чотири сири</h2>
+        <p>Ціна: 189 ₴</p>
+        <p>430 г/g</p>
+        <p>Cир Блю чіз, сир Гауда, сир Голландський, сир Моцарелла, вершковий соус.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://images.deliveryhero.io/image/menus-glovo/products/655a37c74c4aeaf3ff58c65b780e0220f42fd31e16a5940856bee8eb7e39a83a?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=">
+        <h2>Піца Карбонара</h2>
+        <p>Ціна: 179 ₴</p>
+        <p>490 г/g</p>
+        <p>30 см 490 грам Бекон, шинка, печериці, сир Моцарелла, маринована цибуля, оливки, соус вершковий.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+    <div class="burger">
+        <img src="https://images.deliveryhero.io/image/menus-glovo/products/f9d3a48ca7e39297953b0f2efa5219cf34698ab067cff540fdf177b3473eb3ea?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=">
+        <h2>Піца Мисливська</h2>
+        <p>Ціна: 149 ₴</p>
+        <p>490 г/g</p>
+        <p>30 см 440 грам Мисливські ковбаски, салямі, солоний огірок, цибуля маринована, моцарелла, фірмовий соус. Для справжніх мисливців за смаком. Спробуй!.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+
+
+
+
+
+            <div class="col-md-5">
+                <h4>Ми в соціальних мережах</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktok.com">TikTok</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+
+
+
+
+<div class="col-md-4">
+                <div/>
+
+            <div class="col-md-7">
+                <h4>Графік роботи</h4>
+                <p>Пн-Пт: Цілодобово</p>
+                <p>Сб-Нд: 8:00 - 2:00</p>
+            </div>
+
+                <div class="col-md-5">
+                <div/>
+                    <div class="col-md-5">
+                <div/>
+                        <div class="col-md-5">
+                <div/>
+                            <div class="col-md-5">
+                <div/>
+                                <div class="col-md-5">
+                <div/>
+                                    <div class="col-md-5">
+                <div/>
+                                        <div class="col-md-5">
+                <div/>
+                                            <div class="col-md-5">
+                <div/>
+                                                <div class="col-md-5">
+                <div/>
+                                                    <div class="col-md-5">
+                <div/>
+                                                        <div class="col-md-5">
+                <div/>
+                                                            <div class="col-md-5">
+                <div/>
+                                                                <div class="col-md-5">
+                <div/>
+                                                                    <div class="col-md-5">
+                <div/>
+                                                                        <div class="col-md-5">
+                <div/>
+                                                                            <div class="col-md-5">
+                <div/>
+            <div class="col-md-5">
+                <h4>Контактна інформація</h4>
+                <p>Телефон: +380645680475</p>
+                <p>Email: info@food_street.com</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+               </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

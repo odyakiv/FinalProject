@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='drink.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Напої</title>
+</head>
+<body>
+    <h1>Напої</h1>
+        <nav>
+        <ul>
+            <li><a href="{{ url_for('food_street') }}">Головна</a></li>
+            <li><a href="{{ url_for('menu') }}">Переглянути меню</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Cola_250ml:product-header-desktop?wid=829&hei=455&dpr=off">
+        <h2>Кока-Кола мала</h2>
+        <p>Ціна: 35 ₴</p>
+        <p>250 мл/ml | 102 ккал/kcal</p>
+        <p>Всесвітньо відомий освіжаючий напій.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Fanta_250ml:product-header-desktop?wid=829&hei=455&dpr=off">
+        <h2>Фанта мала</h2>
+        <p>Ціна: 35 ₴</p>
+        <p>250 мл/ml | 102 ккал/kcal</p>
+        <p>Всесвітньо відомий освіжаючий напій.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/Sprite_250ml:product-header-desktop?wid=829&hei=455&dpr=off">
+        <h2>Спрайт малий</h2>
+        <p>Ціна: 35 ₴</p>
+        <p>250 мл/ml | 102 ккал/kcal</p>
+        <p>Всесвітньо відомий освіжаючий напій.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/CoffeeLatteLarge:product-header-desktop?wid=830&hei=458&dpr=off">
+        <h2>Кава "Лате" класік</h2>
+        <p>Ціна: 48 ₴</p>
+        <p>295 мл/ml | 130 ккал/kcal</p>
+        <p>Лате – кавовий напій, який містить молоко. Особливістю цієї кави є те, що, на відміну від капучино, у лате молока значно більше.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/CoffeeCapuccinoLarge:product-header-desktop?wid=830&hei=458&dpr=off">
+        <h2>Кава "Капучино" класік</h2>
+        <p>Ціна: 48 ₴</p>
+        <p>245 мл/ml | 130 ккал/kcal245</p>
+        <p>Капучино – це мікс еспресо та гарячого молока у рівних пропорціях. Особливістю цієї кави є смачна молочна пінка, яка утворюється завдяки поєднанню пари та молока.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+    <div class="burger">
+        <img src="https://s7d1.scene7.com/is/image/mcdonalds/TeaBlack:product-header-desktop?wid=829&hei=455&dpr=off">
+        <h2>Чай чорний</h2>
+        <p>Ціна: 30 ₴</p>
+        <p>300 мл/ml | 0 ккал/kcal</p>
+        <p>Оригінальний чорний чай.</p>
+        <a href="{{ url_for('zakas', zakas_id=1) }}"><button>Замовити</button></a>
+    </div>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Контактна інформація</h4>
+                <p>Телефон: +380645680475</p>
+                <p>Email: info@food_street.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Графік роботи</h4>
+                <p>Пн-Пт: Цілодобово</p>
+                <p>Сб-Нд: 8:00 - 2:00</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Ми в соціальних мережах</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktok.com">TikTok</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Підтримка</h4>
+                <p>Найчастіші запитання</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
